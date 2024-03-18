@@ -274,6 +274,59 @@ if [ -f /sys/devices/soc0/select_image ]; then
 	echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
 
+model_name=`getprop ro.product.device`
+
+if [ $model_name == "b5q" ]; then
+	echo 683 > /sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh
+	echo 898 > /sys/devices/system/cpu/cpufreq/policy3/walt/target_load_thresh
+	echo 867 > /sys/devices/system/cpu/cpufreq/policy7/walt/target_load_thresh
+
+	echo 15000 > /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
+	echo 15000 > /sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us
+	echo 15000 > /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
+	echo 1344000 > /sys/devices/system/cpu/cpufreq/policy0/walt/up_delay_freq
+	echo 2592000 > /sys/devices/system/cpu/cpufreq/policy3/walt/up_delay_freq
+	echo 2841600 > /sys/devices/system/cpu/cpufreq/policy7/walt/up_delay_freq
+
+	echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
+
+	echo 1 > /proc/sys/walt/sched_conservative_pl
+
+	echo 50 95 > /proc/sys/walt/sched_downmigrate
+	echo 67 95 > /proc/sys/walt/sched_upmigrate
+
+	echo 16 > /dev/cpuctl/background/cpu.uclamp.max
+
+	chown root.system /sys/devices/system/cpu/cpufreq/policy0/walt/up_delay_freq
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/walt/up_delay_freq
+	chown root.system /sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh
+	chown root.system /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
+	chown root.system /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
+	chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
+	
+	chown root.system /sys/devices/system/cpu/cpufreq/policy3/walt/up_delay_freq
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy3/walt/up_delay_freq
+	chown root.system /sys/devices/system/cpu/cpufreq/policy3/walt/target_load_thresh
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy3/walt/target_load_thresh
+	chown root.system /sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us
+	
+	chown root.system /sys/devices/system/cpu/cpufreq/policy7/walt/up_delay_freq
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy7/walt/up_delay_freq
+	chown root.system /sys/devices/system/cpu/cpufreq/policy7/walt/target_load_thresh
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy7/walt/target_load_thresh
+	chown root.system /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
+
+	chown root.system /sys/devices/system/cpu/cpufreq/policy0/walt/pl
+	chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/walt/pl
+
+	chown root.system /dev/cpuctl/background/cpu.uclamp.max
+	chmod 0660 /dev/cpuctl/background/cpu.uclamp.max
+fi
+
 echo 4 > /proc/sys/kernel/printk
 
 # SED data dump

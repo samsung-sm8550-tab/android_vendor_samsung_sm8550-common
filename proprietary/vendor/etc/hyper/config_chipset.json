@@ -813,8 +813,8 @@
     },
     {
       "SysfsId": "0x00301504",
-      "SysfsName": "DOWNRATE_LIMIT_US_CPU4",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy4/walt/down_rate_limit_us"
+      "SysfsName": "DOWNRATE_LIMIT_US_CPU3",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy3/walt/down_rate_limit_us"
     },
     {
       "SysfsId": "0x00301507",
@@ -848,18 +848,18 @@
     },
     {
       "SysfsId": "0x00301924",
-      "SysfsName": "UP_DELAY_FREQ_POLICY4",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy4/walt/up_delay_freq"
+      "SysfsName": "UP_DELAY_FREQ_POLICY3",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy3/walt/up_delay_freq"
     },
     {
       "SysfsId": "0x00301934",
-      "SysfsName": "TARGET_LOAD_THRESH_POLICY4",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy4/walt/target_load_thresh"
+      "SysfsName": "TARGET_LOAD_THRESH_POLICY3",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy3/walt/target_load_thresh"
     },
     {
       "SysfsId": "0x00301944",
-      "SysfsName": "UP_RATE_LIMIT_US_POLICY4",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy4/walt/up_rate_limit_us"
+      "SysfsName": "UP_RATE_LIMIT_US_POLICY3",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us"
     },
     {
       "SysfsId": "0x00301927",

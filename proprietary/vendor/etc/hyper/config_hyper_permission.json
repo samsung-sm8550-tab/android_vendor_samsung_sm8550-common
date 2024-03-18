@@ -14,7 +14,7 @@
     {
       "ProcName": "2d7kXzDmEA16RFFmIqnqM2deXaIxZ7JULD+gsfneGHY=",
       "HintList": [
-        "12", "18", "7000"
+        "12", "18", "5000", "7000"
       ]
     },
     {
@@ -269,10 +269,17 @@
         "8600"
       ]
     },
-	{
+    {
       "ProcName": "2d7kXzDmEA16RFFmIqnqM3LwYwqNUtd7SzYv+0cBNZg=",
       "HintList": [
         "10001", "10002", "10003", "10004", "10005", "10006", "10007", "10008", "10009"
+      ]
+    },
+    {
+      "ProcName": "TRz/DBjmbHQVMMhhRuMp8gjhYDA4okfbESP5pSBzdLIg0n1xgvwsmYrutEz3xrI0",
+      "ResourcePermitted": "TRUE",
+      "HintList": [
+        "2000", "2001"
       ]
     }
   ]
