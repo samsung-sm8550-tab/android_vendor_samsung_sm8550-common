@@ -253,6 +253,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_bokeh_feature_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature_vendor.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_portrait_feature_unihal.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_portrait_feature_unihal.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/pwr/AODPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/AODPowerOptFeature.xml \
@@ -277,6 +281,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_00000301_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_00000301_c.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_00000306.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_00000306.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/akmlib.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/akmlib.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
@@ -1067,6 +1072,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libpersonalimprinting.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpersonalimprinting.uniplugin@1.0.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libpet_detector.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpet_detector.uniplugin@1.0.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/libpetcamera_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpetcamera_engine.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprofileparamstorage.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
@@ -1115,8 +1121,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_legacy.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmiservices-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices-ext.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmiservices-sem-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices-sem-ext.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqnnengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqnnengine.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
@@ -1133,11 +1137,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/librapidscorer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librapidscorer.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/librapidscorerplus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librapidscorerplus.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librecordalive.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libril_sem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril_sem.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/librmengine.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmengine.uniplugin@1.0.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/librmengine_plus.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmengine_plus.uniplugin@1.0.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libsamsungcamerahal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsamsungcamerahal.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libsamsungcamerahalutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsamsungcamerahalutils.so \
@@ -1388,6 +1392,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.drk-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.drk-V1-ndk.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.drk@2.0.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so \
