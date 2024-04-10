@@ -366,6 +366,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "hyper-default-sec",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "iweaver_v1_manifest",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/iweaver_v1_manifest.xml",

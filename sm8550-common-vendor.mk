@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider-service_64 \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.frcmc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.frcmc-service \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.health-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.health-service \
+    vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hyper-service \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.security.drk@2.0-service \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.thermal@1.0-service \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.vibrator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.vibrator-service \
@@ -153,6 +154,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
@@ -500,7 +502,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp_pal.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_core.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_interface.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypervintf.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimagecodec_native.quram.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping170.so \
@@ -966,6 +967,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhme.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhme.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhwvault.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwvault.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhyper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyper.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_interface.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
@@ -1430,6 +1432,7 @@ PRODUCT_PACKAGES += \
     bluetooth_audio \
     bttpi-saidl \
     c2_manifest_vendor_audio \
+    hyper-default-sec \
     iweaver_v1_manifest \
     manifest_android.hardware.drm-service.widevine \
     nxp.android.hardware.nfc@1.2-service \
