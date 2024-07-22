@@ -1043,6 +1043,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.pal@1.0-impl \
     TimeService \
+    com.qualcomm.qti.gpudrivers.kalama.api33 \
     HotwordEnrollmentOKGoogleEx4HEXAGON \
     HotwordEnrollmentXGoogleEx4HEXAGON \
     uimservicelibrary \
