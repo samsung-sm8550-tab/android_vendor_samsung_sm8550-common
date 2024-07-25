@@ -1415,7 +1415,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.biometrics.fingerprint-service.samsung \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.security.keymint-service \
     bluetooth_audio \
