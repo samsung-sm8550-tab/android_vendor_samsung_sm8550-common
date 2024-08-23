@@ -223,7 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
