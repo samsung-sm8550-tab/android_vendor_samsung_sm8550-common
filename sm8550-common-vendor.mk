@@ -251,7 +251,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
