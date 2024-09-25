@@ -86,3 +86,6 @@ getegid: 1
 getgroups: 1
 sched_setaffinity: 1
 sched_getaffinity: 1
+
+#renderengine
+sched_setscheduler: 1
