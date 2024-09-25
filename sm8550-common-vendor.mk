@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hermesd:$(TARGET_COPY_OUT_VENDOR)/bin/hermesd \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
-    vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.7-external-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.7-external-service \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
     vendor/samsung/sm8550-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti \
@@ -128,7 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.camera.provider@2.7-external-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.7-external-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
@@ -216,7 +214,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_00000306.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_00000306.img \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000301_0.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000301_0.img \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000306_1.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000306_1.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/akmlib.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/akmlib.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_default_sensors.json \
@@ -509,7 +508,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libVideoSuperNight_interface.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVideoSuperNight_interface.uniplugin@1.0.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_3DPosition_ver202.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_AlbumArt_ver105.so \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver500.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_play_plus_ver500.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver800.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_play_plus_ver800.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_SoundBooster_ver1100.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundBooster_ver1100.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
@@ -576,6 +575,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libcommonchiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcommonchiutils.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
+    vendor/samsung/sm8550-common/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libcv_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcv_common.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
