@@ -1157,24 +1157,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.gnss-aidl-service-qti \
-    android.hardware.security.keymint-service \
-    bluetooth_audio \
-    bttpi-saidl \
-    c2_manifest_vendor_audio \
-    hyper-default-sec \
-    iweaver_v1_manifest \
-    manifest_android.hardware.drm-service.widevine \
-    nxp.android.hardware.nfc@1.2-service \
-    qms-saidl \
-    sec_c2_manifest_default0_1_0 \
-    vendor.qti.camera.aon-impl-1.3 \
-    vendor.qti.camera.postproc-impl \
-    vendor.qti.diag.hal.service \
-    vendor.qti.gnss-service \
-    vendor.samsung.hardware.camera.provider-service \
-    vendor.samsung.hardware.thermal@1.0-manifest \
-    vendor.samsung.hardware.vibrator-default
+    android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.security.keymint-service.xml \
+    bluetooth_audio.xml \
+    bttpi-saidl.xml \
+    c2_manifest_vendor_audio.xml \
+    hyper-default-sec.xml \
+    iweaver_v1_manifest.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
+    nxp.android.hardware.nfc@1.2-service.xml \
+    qms-saidl.xml \
+    sec_c2_manifest_default0_1_0.xml \
+    vendor.qti.camera.aon-impl-1.3.xml \
+    vendor.qti.camera.postproc-impl.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.samsung.hardware.camera.provider-service.xml \
+    vendor.samsung.hardware.thermal@1.0-manifest.xml \
+    vendor.samsung.hardware.vibrator-default.xml
 
 PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink64 \
