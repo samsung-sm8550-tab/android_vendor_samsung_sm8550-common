@@ -6780,7 +6780,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcodec2_core.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_hooks", "libqcodec2_utils", "libqcodec2_platform", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcodec2_shim", "libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_hooks", "libqcodec2_utils", "libqcodec2_platform", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
