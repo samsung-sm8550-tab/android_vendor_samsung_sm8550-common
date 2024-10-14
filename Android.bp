@@ -8362,7 +8362,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libskeymint10device.so"],
-			shared_libs: ["android.hardware.security.rkp-V3-ndk", "libcrypto-v33", "liblog", "libcutils", "libutils", "libbase", "libhidlbase", "libbinder_ndk", "libskeymint_cli", "libsecril-client_vendor", "vendor.samsung.hardware.keymint-V2-ndk", "android.hardware.security.keymint-V2-ndk", "android.hardware.security.sharedsecret-V1-ndk", "android.hardware.security.secureclock-V1-ndk", "libkeymasterdeviceutils", "libcppbor_external", "libjsoncpp", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["android.hardware.security.rkp-V3-ndk", "libcrypto-v33", "liblog", "libcutils", "libutils", "libbase", "libhidlbase", "libbinder_ndk", "libskeymint_cli", "libsecril-client_vendor", "vendor.samsung.hardware.keymint-V2-ndk", "android.hardware.security.keymint-V2-ndk", "android.hardware.security.sharedsecret-V1-ndk", "android.hardware.security.secureclock-V1-ndk", "libkeymasterdeviceutils", "libcppbor", "libjsoncpp", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12960,7 +12960,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service"],
-			shared_libs: ["android.hardware.security.rkp-V3-ndk", "libskeymint10device", "vendor.samsung.hardware.keymint-V2-ndk", "android.hardware.security.keymint-V2-ndk", "android.hardware.security.sharedsecret-V1-ndk", "android.hardware.security.secureclock-V1-ndk", "libbase", "libbinder_ndk", "libcppbor_external", "libcrypto-v33", "libkeymaster_portable", "liblog", "libpuresoftkeymasterdevice", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["android.hardware.security.rkp-V3-ndk", "libskeymint10device", "vendor.samsung.hardware.keymint-V2-ndk", "android.hardware.security.keymint-V2-ndk", "android.hardware.security.sharedsecret-V1-ndk", "android.hardware.security.secureclock-V1-ndk", "libbase", "libbinder_ndk", "libcppbor", "libcrypto-v33", "libkeymaster_portable", "liblog", "libpuresoftkeymasterdevice", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
