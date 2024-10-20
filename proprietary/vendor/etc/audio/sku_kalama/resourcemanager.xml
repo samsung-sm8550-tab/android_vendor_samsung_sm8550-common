@@ -98,7 +98,6 @@
         <codec codec_format="CODEC_TYPE_AAC" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_SBC" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_SSC" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
-        <codec codec_format="CODEC_TYPE_RVP" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_LDAC" codec_type="enc" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_APTX" codec_type="enc" codec_library="lib_bt_aptx.so" />
         <codec codec_format="CODEC_TYPE_APTX_HD" codec_type="enc" codec_library="lib_bt_aptx.so" />
@@ -285,6 +284,12 @@
                     <channels>1</channels>
                     <snd_device_name>wifi-call-usb-headphone-mic</snd_device_name>
                 </custom-config>
+                <custom-config key="wifi_call_flip">
+                    <snd_device_name>wifi-call-handset-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <snd_device_name>voip-comm-handset-mic-flip</snd_device_name>
+                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_VOICE_CALL</name>
@@ -329,6 +334,9 @@
                 <custom-config key="incallmusic_rcv">
                     <channels>2</channels>
                     <snd_device_name>loopback-incallmusic-mic</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <snd_device_name>call-handset-mic-flip</snd_device_name>
                 </custom-config>
                 <custom-config key="dual-mic">
                     <channels>2</channels>
@@ -440,7 +448,7 @@
                     <snd_device_name>camcorder-sub-mic</snd_device_name>
                 </custom-config>
                 <custom-config key="camcorder_multi_mic">
-                    <channels>4</channels>
+                    <channels>2</channels>
                     <bit_width>24</bit_width>
                     <snd_device_name>camcorder-multi-mic</snd_device_name>
                 </custom-config>
@@ -566,15 +574,27 @@
                 <custom-config key="voip_tv">
                     <snd_device_name>voip-comm-tv-speaker-mic</snd_device_name>
                 </custom-config>
-                <custom-config key="voip_smonitor">
-                    <snd_device_name>voip-smonitor-speaker-mic</snd_device_name>
-                </custom-config>
                 <custom-config key="wifi_call">
                     <snd_device_name>wifi-call-speaker-mic</snd_device_name>
                 </custom-config>
                 <custom-config key="wifi_call_dex">
                     <channels>1</channels>
                     <snd_device_name>wifi-call-dex-speaker-mic</snd_device_name>
+                </custom-config>
+                <custom-config key="wifi_call_flip">
+                    <snd_device_name>wifi-call-speaker-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <snd_device_name>voip-comm-speaker-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="flex">
+                    <snd_device_name>voip-comm-speaker-mic-flex</snd_device_name>
+                </custom-config>
+                <custom-config key="voip_gaming_flip">
+                    <snd_device_name>voip-gaming-speaker-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="voip_smonitor">
+                    <snd_device_name>voip-smonitor-speaker-mic</snd_device_name>
                 </custom-config>
             </usecase>
             <usecase>
@@ -607,6 +627,15 @@
                 <custom-config key="incallmusic_spk">
                     <channels>2</channels>
                     <snd_device_name>loopback-incallmusic-mic</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <snd_device_name>call-speaker-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="video_call_flip">
+                    <snd_device_name>video-call-speaker-mic-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="video_call_flex">
+                    <snd_device_name>video-call-speaker-mic-flex</snd_device_name>
                 </custom-config>
                 <custom-config key="dual-mic">
                     <channels>2</channels>
@@ -1032,8 +1061,8 @@
         <out-device>
             <id>PAL_DEVICE_OUT_SPEAKER</id>
             <back_end_name>TDM-LPAIF-RX-PRIMARY</back_end_name>
-            <max_channels>2</max_channels>
-            <channels>2</channels>
+            <max_channels>4</max_channels>
+            <channels>4</channels>
             <samplerate>48000</samplerate>
             <bit_width>24</bit_width>
             <snd_device_name>speaker</snd_device_name>
@@ -1091,7 +1120,6 @@
             <usecase>
                 <name>PAL_STREAM_VOICE_CALL</name>
                 <priority>1</priority>
-                <channels>2</channels>
                 <snd_device_name>call-speaker</snd_device_name>
                 <custom-config key="video_call">
                     <snd_device_name>video-call-speaker</snd_device_name>
@@ -1113,6 +1141,15 @@
                 </custom-config>
                 <custom-config key="incallmusic_spk">
                     <snd_device_name>loopback-incallmusic-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <snd_device_name>call-speaker-flip</snd_device_name>
+                </custom-config>
+                <custom-config key="video_call_flip">
+                    <snd_device_name>video-call-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="video_call_flex">
+                    <snd_device_name>video-call-speaker</snd_device_name>
                 </custom-config>
             </usecase>
             <usecase>
@@ -1141,6 +1178,22 @@
                 <custom-config key="wifi_call_dex">
                     <priority>3</priority>
                     <snd_device_name>wifi-call-dex-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="wifi_call_flip">
+                    <priority>3</priority>
+                    <snd_device_name>wifi-call-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="flip">
+                    <priority>3</priority>
+                    <snd_device_name>voip-comm-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="flex">
+                    <priority>3</priority>
+                    <snd_device_name>voip-comm-speaker</snd_device_name>
+                </custom-config>
+                <custom-config key="voip_gaming_flip">
+                    <priority>3</priority>
+                    <snd_device_name>voip-gaming-speaker</snd_device_name>
                 </custom-config>
             </usecase>
             <usecase>
@@ -1195,6 +1248,9 @@
               <custom-config key="incallmusic_rcv">
                   <snd_device_name>loopback-incallmusic-handset</snd_device_name>
               </custom-config>
+              <custom-config key="flip">
+                  <snd_device_name>call-handset-flip</snd_device_name>
+              </custom-config>
           </usecase>
           <usecase>
               <name>PAL_STREAM_VOIP_RX</name>
@@ -1222,6 +1278,14 @@
               <custom-config key="wifi_call_tcoil_hac">
                   <priority>3</priority>
                   <snd_device_name>wifi-call-handset-hac-tcoil</snd_device_name>
+              </custom-config>
+              <custom-config key="wifi_call_flip">
+                  <priority>3</priority>
+                  <snd_device_name>wifi-call-handset</snd_device_name>
+              </custom-config>
+              <custom-config key="flip">
+                  <priority>3</priority>
+                  <snd_device_name>voip-comm-handset</snd_device_name>
               </custom-config>
           </usecase>
           <usecase>
@@ -2066,6 +2130,12 @@
                 <param snd_name="va-mic-dmic" />
                 <param ec_ref="false" />
             </capture_profile>
+            <capture_profile name="DUAL_MIC_16KHZ_16BIT_CUSTOM">
+                <param sample_rate="16000" />
+                <param channels="2" />
+                <param bit_width="16" />
+                <param snd_name="va-mic-dmic-lpi" />
+            </capture_profile>
             <capture_profile name="DUAL_MIC_16KHZ_16BIT_FFNS">
                 <param sample_rate="16000" />
                 <param channels="2" />
@@ -2303,7 +2373,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <operating_modes>
-                    <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
+                    <low_power capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI" />
                     <high_performance_and_charging capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI" />
                 </operating_modes>
@@ -2333,7 +2403,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <operating_modes>
-                    <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
+                    <low_power capture_profile_handset="DUAL_MIC_16KHZ_16BIT_CUSTOM" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI" />
                     <high_performance_and_charging capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI" />
                 </operating_modes>
