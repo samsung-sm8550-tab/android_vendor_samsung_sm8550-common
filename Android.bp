@@ -3072,7 +3072,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbt-hidlclient.so"],
-			shared_libs: ["libutils", "libhidlbase", "android.hardware.bluetooth@1.0", "vendor.qti.hardware.fm@1.0", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libutils", "libhidlbase", "android.hardware.bluetooth@1.0", "vendor.qti.hardware.fm@1.0_vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -10952,7 +10952,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.fm@1.0",
+	name: "vendor.qti.hardware.fm@1.0_vendor",
+	stem: "vendor.qti.hardware.fm@1.0",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -12869,7 +12870,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libhidlbase", "libbinder_ndk", "vendor.samsung.hardware.bluetooth@2.0", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "android.hardware.bluetooth@1.1-impl-qti", "vendor.qti.hardware.bttpi-V2-ndk", "libsoc_helper", "vendor.qti.hardware.fm@1.0", "vendor.qti.hardware.bluetooth_sar@1.0", "vendor.qti.hardware.bluetooth_sar@1.1", "vendor.qti.hardware.bttpi-impl", "vendor.qti.hardware.btconfigstore@1.0", "vendor.qti.hardware.btconfigstore@2.0", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libhidlbase", "libbinder_ndk", "vendor.samsung.hardware.bluetooth@2.0", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "android.hardware.bluetooth@1.1-impl-qti", "vendor.qti.hardware.bttpi-V2-ndk", "libsoc_helper", "vendor.qti.hardware.fm@1.0_vendor", "vendor.qti.hardware.bluetooth_sar@1.0", "vendor.qti.hardware.bluetooth_sar@1.1", "vendor.qti.hardware.bttpi-impl", "vendor.qti.hardware.btconfigstore@1.0", "vendor.qti.hardware.btconfigstore@2.0", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
