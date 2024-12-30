@@ -8129,38 +8129,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhyper_vendor",
-    stem: "libhyper",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhyper.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libbase",
-                "libjsoncpp",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libhypermotion_core",
     owner: "samsung",
     strip: {
@@ -8208,37 +8176,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libuniplugin",
                 "libhypermotion_core",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhypervintf",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhypervintf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidlbase",
-                "vendor.samsung.hardware.hyper-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21423,15 +21360,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "hyper-default-sec.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "iweaver_v1_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/iweaver_v1_manifest.xml",
@@ -22293,39 +22221,6 @@ cc_prebuilt_binary {
                 "lib_profiler",
                 "vendor.samsung.hardware.camera.device-V1-ndk",
                 "vendor.samsung.hardware.camera.provider-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.hyper-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhyper_vendor",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libbinder_ndk",
-                "vendor.samsung.hardware.hyper-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",

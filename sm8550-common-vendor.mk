@@ -63,7 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
@@ -569,10 +568,8 @@ PRODUCT_PACKAGES += \
     libhermes_cred \
     libhme \
     libhwvault \
-    libhyper_vendor \
     libhypermotion_core \
     libhypermotion_interface \
-    libhypervintf \
     libiddqd.uniplugin@1.0 \
     libidl \
     libimage_enhancement.arcsoft \
@@ -1073,7 +1070,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti.xml \
     bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
-    hyper-default-sec.xml \
     iweaver_v1_manifest.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     nxp.android.hardware.nfc@1.2-service.xml \
@@ -1108,7 +1104,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
-    vendor.samsung.hardware.hyper-service \
     vendor.samsung.hardware.thermal@1.0-service \
     vendor.samsung.hardware.vibrator-service \
     init.kernel.post_boot-kalama \
