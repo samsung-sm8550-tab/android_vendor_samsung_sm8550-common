@@ -1,5 +1,5 @@
 {
-    "deviceName": "SM8550_common",
+    "deviceName": "SM8550_tablet",
 
     "HumanAwareEngine": {
         "Perf_mode_preview": "PERFMODE_LOW",
@@ -47,16 +47,6 @@
         "ModelFormat": "SNPE",
         "Encryption": "false",
         "input_size": [[640, 640], [640, 640], [640, 640], [640, 640]]
-    },
-    "capture_dual_pixel_depth": {
-        "Weightfile": "/system/cameradata/portrait_data/SRIB_DPD_A16W8_V013_sm8550_snpe2106.dlc",
-        "Version": "013",
-        "ComputeUnit": "COMPUTE_DSP",
-        "ExecutionDataType": "QASYMM16",
-        "ModelType": "MODEL_TYPE_DPDE",
-        "ModelFormat": "SNPE",
-        "Encryption": "false",
-        "input_size": [[1024, 768], [1024, 768], [1024, 768], [1024, 768]]
     },
     "capture_depth": {
         "Weightfile": "/system/cameradata/portrait_data/SRIB_SID_A16W8_V018_sm8550_snpe2433.dlc",

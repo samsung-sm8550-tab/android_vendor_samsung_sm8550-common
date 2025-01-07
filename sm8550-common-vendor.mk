@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_haptic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_haptic.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_spatializer.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
@@ -55,7 +54,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -77,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.2-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
@@ -105,12 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
@@ -125,25 +116,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_bokeh_feature_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature_vendor.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_portrait_feature_unihal.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_portrait_feature_unihal.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/qms_log_config:$(TARGET_COPY_OUT_VENDOR)/etc/qms_log_config \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
@@ -156,7 +137,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000301_0.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000301_0.img \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000304_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000304_c.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000306_1.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000306_1.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/akmlib.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/akmlib.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
@@ -164,7 +144,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors_template.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_iot_hdk_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_iot_hdk_dae.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_irq.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lps22hh_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_power_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_qsh_ble_0.json \
@@ -195,7 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
@@ -227,23 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b01 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.elf \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-a2h.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-a2h.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-calib.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-dvl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-dvl.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc1.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc2.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc3.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt1.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt2.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt3.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.wmfw \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
@@ -266,8 +227,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/gmu_gen70200.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70200.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/mfc/mfc_fw_flash.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/mfc/mfc_fw_flash_cps4038.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash_cps4038.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/nfc/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libsn220u_fw.so \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
@@ -282,8 +241,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/AIAwbModel_v2.2.tflite:$(TARGET_COPY_OUT_VENDOR)/lib64/AIAwbModel_v2.2.tflite \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx564.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/f_dual_calibration.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
@@ -319,7 +276,6 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
-    ese_spi_nxp \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
@@ -340,19 +296,12 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libAFSegmenter_v1.camera.samsung \
     libAIHighRes_interface \
-    libAIMFISP.camera.samsung \
-    libAIMFISP_core.camera.samsung \
-    libAImode_wrapper.camera.samsung \
-    libAIphoto_core.camera.samsung \
     libAlacSwDec \
     libApeSwDec \
-    libBarcodeReader.vendor.quram \
-    libBeauty_v4.camera.samsung \
     libBlurDetectionDeepLearning.camera.samsung \
     libCB \
     libDLInterface.camera.samsung \
     libDeviceInfoProvider \
-    libDocumentDetector.uniplugin@1.0 \
     libEventFinder.camera.samsung \
     libEvrcSwCodec \
     libFace3DTA \
@@ -371,19 +320,13 @@ PRODUCT_PACKAGES += \
     libHprVisualEffect \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libHumanSegVideoModel_Vendor \
-    libIDDQD_core \
-    libImageSegmenter_v1.camera.samsung \
     libLightObjectDetector_v1.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
-    libLocalTM_preview_core \
     libLocalTM_wrapper.camera.samsung \
     libMoireDetection.camera.samsung \
     libMoireDetectionWrapper.camera.samsung \
     libMoireDetector.uniplugin@1.0 \
     libMoonVerifier_v1.camera.samsung \
-    libMotionEstimator.camera.samsung \
-    libMotionEstimator.uniplugin@1.0 \
-    libMotionEstimatorWrapper.camera.samsung \
     libObjectDetector_v1.camera.samsung \
     libOpenCL \
     libOpenCv.camera.samsung \
@@ -392,29 +335,19 @@ PRODUCT_PACKAGES += \
     libPersonal_capture.camera.samsung \
     libPersonal_core.camera.samsung \
     libPetDetector_interface \
-    libPortraitSolution.camera.samsung_preview \
     libQ6MSFR_manager_stub \
-    libQRInterface.camera.samsung \
     libQSEEComAPI \
     libQTEEConnector_vendor \
     libQcelp13SwCodec \
-    libQrDetector.uniplugin@1.0 \
     libRelighting_API.camera.samsung \
     libSNPE \
     libSRIB_ARVL_HAP.camera.samsung \
-    libSSMAutoTrigger_interface \
-    libSSM_AutoTrigger \
-    libSWNDFilterPreview.camera.samsung \
     libSceneDetector_v1.camera.samsung \
     libSecJpegEncoder.uniplugin@1.0 \
-    libSemDataProps \
-    libSemTelephonyProps \
     libSingleTakeBlurDetection.uniplugin@1.0 \
     libSnpeCpu \
     libSnpeGpu \
     libSnpeHtpV73Stub \
-    libTetraMFP10.camera.samsung \
-    libTetraMFP10Tuning.camera.samsung \
     libTouchInputVM \
     libTrustedInput \
     libTrustedInputTZ \
@@ -423,9 +356,8 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libUniPluginUtils \
-    libUniScaler.uniplugin@1.0 \
     libVideoSuperNight_interface.uniplugin@1.0 \
-    lib_SamsungRec_08020 \
+    lib_SamsungRec_07010 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver800 \
@@ -433,7 +365,6 @@ PRODUCT_PACKAGES += \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
-    lib_lvacfs \
     lib_profiler \
     libadm \
     libadreno_app_profiles \
@@ -457,12 +388,9 @@ PRODUCT_PACKAGES += \
     libats \
     libaudio_log_utils \
     libauto_framing_arcsoft.uniplugin@1.0 \
-    libauto_framing_lite.uniplugin@1.0 \
     libautotracking_interface \
     libbacklight-calib \
     libbatching \
-    libbeauty_preview.uniplugin@1.0 \
-    libbeautyshot.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
@@ -516,7 +444,6 @@ PRODUCT_PACKAGES += \
     libdsmanager \
     libdsphist_qc \
     libdsutils \
-    libdualcam_refocus_image \
     libdualcam_refocus_video \
     libegis_fp_normal_sensor_test \
     libengine_did \
@@ -537,8 +464,6 @@ PRODUCT_PACKAGES += \
     libfocuspeaking \
     libfocuspeaking.uniplugin@1.0 \
     libformatConverter.unifunc \
-    libfrc.quram \
-    libfrc_quram.uniplugin@1.0 \
     libgame_enhance \
     libgeofencing \
     libgf_in_system_lib \
@@ -568,7 +493,6 @@ PRODUCT_PACKAGES += \
     libhwvault \
     libhypermotion_core \
     libhypermotion_interface \
-    libiddqd.uniplugin@1.0 \
     libidl \
     libimage_enhancement.arcsoft \
     libimagecodec_native.quram \
@@ -584,17 +508,12 @@ PRODUCT_PACKAGES += \
     libjpege \
     libjpegencoder_sw.unifunc \
     libjpegsq.media.samsung \
-    libjump_shot.uniplugin@1.0 \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterutils \
     liblbs_core \
     liblistensoundmodel2vendor \
-    liblivefocus_capture_engine \
-    liblivefocus_capture_interface \
-    liblivefocus_preview_engine \
-    liblivefocus_preview_interface \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
@@ -607,7 +526,6 @@ PRODUCT_PACKAGES += \
     libloc_qwes_iface \
     libloc_socket \
     libloc_util \
-    liblocaltm_capture.uniplugin@1.0 \
     liblocation_api \
     liblocation_api_msg \
     liblocation_client_api \
@@ -621,7 +539,6 @@ PRODUCT_PACKAGES += \
     liblx-osal \
     libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
-    libmcaimegpuSSM.samsung \
     libmctfengine_stub \
     libmdmdetect \
     libmdmimgload \
@@ -642,7 +559,6 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libmultiobject_tracker \
     libnanopb \
-    libndfilter_preview.uniplugin@1.0 \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_datapath_proxy \
@@ -728,7 +644,6 @@ PRODUCT_PACKAGES += \
     librapidscorerplus \
     librcmask \
     librecordalive \
-    libril_sem \
     librmengine_plus.uniplugin@1.0 \
     librpmb \
     libsamsungcamerahal \
@@ -750,9 +665,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsec-ril \
     libsec2imageformatfilter \
-    libsec_semRil \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
@@ -777,10 +690,8 @@ PRODUCT_PACKAGES += \
     libshsc \
     libsi \
     libsimba.media.samsung \
-    libsingle_portrait_preview.uniplugin@1.0 \
     libskeymint10device \
     libskeymint_cli \
-    libsmartfocus.uniplugin@1.0 \
     libsmemlog \
     libsnap_compute \
     libsnap_compute_secure \
@@ -858,9 +769,7 @@ PRODUCT_PACKAGES += \
     libxml \
     libxtadapter \
     libzoomroi.samsung \
-    libzoomroi_lite.samsung \
     libdrmclearkeyplugin \
-    nfc_nci_nxpsn \
     qti.video.utils.videobufferlayout \
     libQnnHtp \
     libQnnHtpV73Stub \
@@ -965,13 +874,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss-V2-ndk_platform \
     vendor.samsung.hardware.hyper-V2-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
-    vendor.samsung.hardware.nfc@2.0 \
-    vendor.samsung.hardware.radio-V1-ndk \
-    vendor.samsung.hardware.radio.bridge-V1-ndk \
-    vendor.samsung.hardware.radio.channel-V1-ndk \
-    vendor.samsung.hardware.radio.data-V1-ndk \
-    vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.security.drk-V1-ndk \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
@@ -1070,7 +972,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio.xml \
     iweaver_v1_manifest.xml \
     manifest_android.hardware.drm-service.widevine.xml \
-    nxp.android.hardware.nfc@1.2-service.xml \
     qms-saidl.xml \
     sec_c2_manifest_default0_1_0.xml \
     vendor.qti.camera.aon-impl-1.3.xml \
@@ -1092,10 +993,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
-    android.hardware.secure_element@1.2-service \
     android.hardware.security.keymint-service-qti \
-    nxp.android.hardware.nfc@1.2-service \
-    rild \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.trustedui@1.0-service-qti \
