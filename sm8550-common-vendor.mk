@@ -191,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
@@ -222,29 +221,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/CAMERA_ICP.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b19 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_sqe.fw \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b01 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/a740_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.elf \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-a2h.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-a2h.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-calib.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-dvl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-dvl.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc1.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc2.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-svc3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc3.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt1.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt2.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26-wt3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt3.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/cs40l26.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.wmfw \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
@@ -309,8 +289,6 @@ PRODUCT_PACKAGES += \
     cdsp_face \
     com.qti.qseeaon \
     com.qti.qseeutils \
-    com.qti.settings.sm8550 \
-    com.qti.stats.common \
     com.qualcomm.qti.dpm.api@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -567,7 +545,6 @@ PRODUCT_PACKAGES += \
     libhme \
     libhwvault \
     libhypermotion_core \
-    libhypermotion_interface \
     libiddqd.uniplugin@1.0 \
     libidl \
     libimage_enhancement.arcsoft \
@@ -842,7 +819,6 @@ PRODUCT_PACKAGES += \
     libtswrappercommon \
     libubifocus \
     libuniplugin \
-    libvdis.uniplugin@1.0 \
     libvdis_core \
     libvideobeauty.arcsoft \
     libvideobeauty.uniplugin@1.0 \
@@ -867,13 +843,9 @@ PRODUCT_PACKAGES += \
     libQnnSystem \
     libasphere \
     libaudioeffectoffload \
-    libaudiosaplus_sec \
     libmyspace \
     libquasar \
-    libsamsungSoundbooster_plus \
     libshoebox \
-    libswdap \
-    libswspatializer \
     unihal_android \
     unihal_cutils \
     unihal_entry \
@@ -1102,7 +1074,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
-    vendor.samsung.hardware.thermal@1.0-service \
     vendor.samsung.hardware.vibrator-service \
     init.kernel.post_boot-kalama \
     init.kernel.post_boot \
