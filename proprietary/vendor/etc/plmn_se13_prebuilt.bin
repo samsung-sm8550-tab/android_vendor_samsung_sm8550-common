@@ -1,8 +1,4 @@
 
-
-13913Test 2"Manu
-
-13914Test 4"emma Ta
 
 20201
 GR COSMOTE"C-OTE
@@ -99,6 +95,8 @@ SRB Yettel"Yettel
 22210vodafone IT"voda IT
 
 22250ILIAD"ILIAD
+
+22288WINDTRE"WINDTRE
  
 22601RO Vodafone RO"VF-RO
 
@@ -114,9 +112,6 @@ TELEKOM.RO"TELEKOM
 22802Sunrise"Sunrise
 
 22803Salt"Salt
-
-22853
-Sunrise CH"Sunrise
 
 23001T-Mobile CZ"TMO CZ
 
@@ -199,17 +194,17 @@ Telenor SE"TelenorS
 
 24403FI DNA"DNA
 
-24405FI elisa"elisa
+24405FI Elisa"Elisa
 
 24412FI DNA"DNA
 
 24414FI AMT"FI AMT
 
-24421FI elisa"elisa
+24421FI Elisa"Elisa
 #
 24436DNA - Telia FI"SuomenYV
-
-24445FI elisa"elisa
+"
+24445Erillisverkot"Erillisv
 
 24491Telia FI"Telia
 
@@ -232,8 +227,6 @@ Telenor SE"TelenorS
 24803Tele2 EE"Tele2 EE
 
 25001MTS RUS"MTS RUS
-
-25016miatel"miatel
 
 25027LETAI"LETAI
 "
@@ -273,6 +266,8 @@ Beeline UA"Beeline
 26006Play"Play
 +
 26201Telekom Deutschland GER"Telekom
+ 
+26202vodafone.de"Vodafone
 
 26203o2 - de"o2 - de
 
@@ -325,24 +320,24 @@ IS OnWaves"OnWaves
 27821	go mobile"gomobile
  
 27877Melita Mobile"Melita
-
-28001	Cyta-Voda"CytaVoda
+
+28001Cyta"Cyta
 
 28010epic"epic
 !
 28020PrimeTel PLC"PrimeTel
 
 28022Cablenet"Cablenet
-
-28201GEO-GEOCELL"GCELL
+
+28201	GEO-GCELL"GCELL
 
 28202MAGTI-GSM-GEO"MAGTI
 
 28204Cellfie"Cellfie
  
 28301Telecom Armenia"Team
-
-28305MTS ARM"MTS Arm
+
+28305Viva"Viva
 
 28310Ucom AM"Ucom
 
@@ -358,6 +353,8 @@ Vivacom BG"Vivacom
 28602Vodafone Türkiye"VF-TR
 !
 28603Turk Telekom"TT Mobil
+
+28622Selam"Selam
 
 28801Foroya Tele"FT-GSM
  
@@ -393,6 +390,8 @@ Telekom.me"T.me
 29703MTEL"MTEL
 
 302150Cogeco"Cogeco
+
+302220TELUS"TELUS
 
 302270Eastlink"Eastlink
 "
@@ -426,6 +425,8 @@ Telekom.me"T.me
 SPM AMERIS"AMERIS
 
 30803SPM Telecom"SPM
+
+30804	Globaltel"SPM4G
 *
 310020US - Union Telephone"UnionTel
 
@@ -500,6 +501,8 @@ SPM AMERIS"AMERIS
 310830T-Mobile"T-Mobile
 
 310840telna Mobile"telna
+
+310950AT&T"AT&T
 
 310990	Worldcall"Evolve
 "
@@ -508,6 +511,8 @@ SPM AMERIS"AMERIS
 311080Pine Cellular"PINECell
 
 311170Tampnet"Tampnet
+
+311180AT&T"AT&T
 
 311230C Spire"C Spire
 
@@ -522,8 +527,8 @@ SPM AMERIS"AMERIS
 311490T-Mobile"T-Mobile
 
 311500Mobi"Mobi
-
-311530PTCI"PTCI
+
+311530USANW"USANW
 
 311560USA OTZ"OTZ
 
@@ -576,6 +581,10 @@ NetGenuity"NetGenui
 314440TGS"TGS
 
 314590Lynk"Lynk
+
+314710Ringer"RNGR
+ 
+314730TextNow USA"TextNow
 
 330110PR Claro"Claro
 
@@ -632,6 +641,8 @@ NetGenuity"NetGenui
 36269Digicel"Digicel
 
 36278Kla"Kla
+
+36291Chippie"Chippie
 
 36301SETAR"SETAR
 
@@ -906,6 +917,8 @@ Mobitel LK"Mobitel
 41302DIALOG"DIALOG
 
 41303Hutch"Hutch
+
+41305DIALOG"DIALOG
 
 41308Hutch"Hutch
 
@@ -952,6 +965,8 @@ Mobily-KSA"Mobily
 42203Ooredoo Oman"Ooredoo
 
 42206Vodafone"Vodafone
+
+42402ETISALAT"ETISALAT
 
 42403du"du
 
@@ -972,6 +987,8 @@ Cellcom IL"Cellcom
 42528Hot Mobile Ltd."Israel
 
 42601BATELCO"BATELCO
+
+42602Zain BH"Zain BH
 
 42604stc"stc
 
@@ -994,8 +1011,8 @@ Beeline UZ"Beeline
 43405	UZB Ucell"Ucell
 
 43407UMS-UZB"UMS
-
-43408UzMobile"UzMobile
+
+43408	UzTelecom"UzTeleco
 
 43604	Babilon-M"Babilon
 
@@ -1014,12 +1031,24 @@ Beeline KG"Beeline
 44011Rakuten"Rakuten
 
 44020SoftBank"SoftBank
-
-44050KDDI_50"KDDI_50
-
-44051KDDI_51"KDDI_51
-
-44054KDDI_54"KDDI_54
+
+4405044050"44050
+
+44051KDDI(au)"KDDI(au)
+
+4405444054"44054
+
+44091
+JPN-ROAM D"JpnRoamD
+
+44092
+JPN-ROAM K"JpnRoamK
+
+44093
+JPN-ROAM S"JpnRoamS
+
+44094
+JPN-ROAM R"JpnRoamR
 $
 45001Samsung Test Bed"Samsung
 
@@ -1090,8 +1119,6 @@ $
 45703Unitel"UNITEL
 "
 45707Best Telecom Laos"Best
-
-45708TPLUS"TPLUS
 
 46000CHINA MOBILE"CMCC
 
@@ -1133,14 +1160,12 @@ CHN-UNICOM"UNICOM
 
 46688
 KGT-Online"KGT
+
+46689T-Star"TST
 %
 46692Chunghwa Telecom"Chunghwa
-
-46693TWN MOBITAI"TW MOB
 
 46697	TW Mobile"TWM
- 
-46699TWM TransAsi"TWM TAT
 !
 470001Grameenphone"Grameen
 
@@ -1172,6 +1197,8 @@ Banglalink"BL
 50502	YES OPTUS"Optus
 
 50503vodafone AU"voda AU
+
+50510norfolk telecom"NT
 
 50550Pivotel"Pivotel
 "
@@ -1206,6 +1233,8 @@ Banglalink"BL
 52003AIS"AIS
 
 52004TRUE-H"TRUE-H
+
+52005dtac TriNet"dtac
 
 52015	NT Mobile"NT
 
@@ -1242,6 +1271,12 @@ Banglalink"BL
 53013One NZ SpaceX"OneNZ SX
 
 530242degrees"2degrees
+
+53603	NEOTEL NR"NEO NR
+#
+53701TELIKOM LIMITED"TELIKOM
+#
+53702TELIKOM LIMITED"TELIKOM
 
 53703DIGICEL"DIGICEL
  
@@ -1289,8 +1324,6 @@ CK KOKANET"KOKANET
 55299PLW PMCI"PMCI
 
 55301TV TTC"TTC
-
-55401Teletok"TTOK
 
 60201	Orange EG"Orange
 
@@ -1428,6 +1461,8 @@ MOZ - mCel"mCel
 64702TELCO OI"TELCO OI
 "
 64703FREE MOBILE RE"FREE RE
+
+64704ZEOP MOBILE"Zeop
 
 64710SRR"SRR
 
@@ -1492,8 +1527,6 @@ TelkomSA-R"Telkom-R
 71203CLARO CR"CLARO CR
 
 71204LIBERTY"LIBERTY
-
-714020Tigo"Tigo
 
 71606Movistar"Movistar
 
@@ -1504,6 +1537,8 @@ TelkomSA-R"Telkom-R
 72234AR PERSONAL"AR TP
 
 72236AR PERSONAL"AR TP
+
+72400	Claro BRA"Claro
 
 72402TIM BRA"TIM
 
@@ -1520,6 +1555,8 @@ TelkomSA-R"Telkom-R
 72411VIVO"VIVO
 
 72423VIVO"VIVO
+!
+72429UNIFIQUE BRA"UNIFIQUE
 
 72432Algar Telecom"Algar
 
@@ -1585,8 +1622,12 @@ TelkomSA-R"Telkom-R
 AeroMobile"AeroMob
 
 90115OnAir"OnAir
+"
+90119epic maritime"epic mar
 
 90126TIM@sea"TIM@sea
+
+90130OQ Technology"OQTEC
 +
 90140Telekom Deutschland GER"Telekom
 
@@ -1595,9 +1636,11 @@ AeroMobile"AeroMob
 90145AISatSea"AISatSea
 
 90146	Telecom26"T26
+
+90149	ZainGroup"ZG
 
 90150EchoStar Mobile"EML
 
 90171Tampnet"Tampnet
 $
-90198Skylo Technologies"Skylo%Published TS.25 Database 29 July 2024
+90198Skylo Technologies"Skylo(Published TS.25 Databse 24 February 2025

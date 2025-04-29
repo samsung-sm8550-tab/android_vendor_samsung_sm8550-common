@@ -16,6 +16,31 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.diaghal-V1-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "samsung",
     strip: {
@@ -1279,6 +1304,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsecaudiohal_aidl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libsecaudiohal_aidl.so",
+            ],
+            shared_libs: [
+                "vendor.samsung.hardware.audio-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libaudioutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "sensors.dynamic_sensor_hal",
     owner: "samsung",
     strip: {
@@ -1748,7 +1804,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libAIMFISP_core.camera.samsung.so",
             ],
             shared_libs: [
-                "libsnap_vndk",
                 "liblog",
                 "libc",
                 "libm",
@@ -2780,7 +2835,6 @@ cc_prebuilt_library_shared {
                 "libMoireDetection.camera.samsung",
                 "libMoireDetectionWrapper.camera.samsung",
                 "libtensorflowlite.camera.samsung",
-                "libtensorflowlite_gpu.camera.samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -3457,7 +3511,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libSWNDFilterPreview.camera.samsung.so",
             ],
             shared_libs: [
-                "libc++_shared",
                 "libz",
                 "liblog",
                 "libc",
@@ -3515,84 +3568,6 @@ cc_prebuilt_library_shared {
                 "libUniPluginUtils",
                 "libimgproc_sw.unifunc@common",
                 "unihal_cutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSemDataProps",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSemDataProps.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSemTelephonyProps",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSemTelephonyProps.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSingleTakeBlurDetection.uniplugin@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSingleTakeBlurDetection.uniplugin@1.0.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libBlurDetectionDeepLearning.camera.samsung",
-                "libtensorflowLite.singletake.camera.samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -4037,6 +4012,56 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libVendorSemDataProps",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libVendorSemDataProps.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVendorSemTelephonyProps",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libVendorSemTelephonyProps.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libVideoSuperNight_interface.uniplugin@1.0",
     owner: "samsung",
     strip: {
@@ -4271,11 +4296,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_lvacfs.so",
             ],
             shared_libs: [
-                "libcutils",
                 "libc",
-                "libc++",
-                "libdl",
                 "libm",
+                "libdl",
             ],
         },
     },
@@ -5388,6 +5411,35 @@ cc_prebuilt_library_shared {
                 "libGLESv1_CM",
                 "libGLESv2",
                 "libGLESv3",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcacertclient",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcacertclient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.qti.hardware.cacert@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -8498,6 +8550,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjnihelper",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjnihelper.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqmiservices",
+                "libqmi_cci",
+                "libcacertclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libjpegQtable_interface",
     owner: "samsung",
     strip: {
@@ -9655,8 +9736,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc++",
                 "libm",
-                "libc++_shared",
                 "libdl",
                 "libc",
             ],
@@ -12907,6 +12988,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/librapidscorerplus.so",
             ],
             shared_libs: [
+                "libsavscmn",
                 "libOpenCv.camera.samsung",
                 "libc++",
                 "liblog",
@@ -13703,8 +13785,9 @@ cc_prebuilt_library_shared {
                 "libz",
                 "libutils",
                 "libjsoncpp",
-                "libSemTelephonyProps",
-                "libSemDataProps",
+                "libVendorSemTelephonyProps",
+                "libVendorSemDataProps",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
@@ -13713,20 +13796,17 @@ cc_prebuilt_library_shared {
                 "libsecnativefeature",
                 "libfloatingfeature",
                 "libsemnativecarrierfeature",
-                "libnlnetmgr",
                 "libtime_genoff",
                 "libmdmdetect",
                 "libdsutils",
                 "librmnetctl",
                 "libconfigdb",
-                "libperipheral_client",
                 "libqmi_cci",
                 "libqmi_client_helper",
                 "libqmi_common_so",
                 "libqmi_encdec",
                 "libdiag",
                 "libc++",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc",
                 "libm",
                 "libdl",
@@ -13847,7 +13927,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libfloatingfeature",
                 "libsecnativefeature",
-                "libbinder",
+                "libaudioutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -13876,6 +13956,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "libsecaudioinfo",
                 "libc++",
                 "libc",
                 "libm",
@@ -13900,10 +13981,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsecfr_engine.so",
             ],
             shared_libs: [
+                "libQSEEComAPI",
                 "libdmabufheap",
                 "libvmmem",
                 "libstagefright_foundation",
-                "libQSEEComAPI",
                 "cdsp_face",
                 "liblog",
                 "libc",
@@ -14585,6 +14666,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.security.rkp-V3-ndk",
                 "liblog",
+                "libbase",
                 "libcutils",
                 "libutils",
                 "android.hardware.keymaster@4.0",
@@ -15661,6 +15743,10 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libshotsuggestion",
+                "libshotsuggestion_engines",
+                "libmultiobject_tracker",
+                "libengine_did",
+                "libHprVisualEffect",
                 "libc++",
                 "libc",
                 "libm",
@@ -19559,6 +19645,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.audio-V1-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.audio@1.0",
     owner: "samsung",
     strip: {
@@ -20789,6 +20900,8 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "libc",
                 "libcutils",
+                "libbinder_ndk",
+                "vendor.qti.diaghal-V1-ndk",
                 "libc++",
                 "libm",
                 "libdl",
@@ -20938,6 +21051,17 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+}
+
+android_app_import {
+    name: "CACertService",
+    owner: "samsung",
+    apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
 }
 
 android_app_import {
@@ -21159,6 +21283,15 @@ prebuilt_etc_xml {
     name: "sec_c2_manifest_default0_1_0.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_0.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "secaudiohalaidl_manifest.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -21757,6 +21890,39 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libril_sem",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "secaudiohalaidl",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/secaudiohalaidl",
+            ],
+            shared_libs: [
+                "vendor.samsung.hardware.audio-V1-ndk",
+                "libcutils",
+                "libbinder_ndk",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libaudioutils",
+                "libsecaudiohal_aidl",
                 "libc++",
                 "libc",
                 "libm",

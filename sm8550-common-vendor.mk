@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
@@ -126,16 +127,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_ltn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_ltn.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_bokeh_feature_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature_vendor.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_portrait_feature_unihal.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_portrait_feature_unihal.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/qms_log_config:$(TARGET_COPY_OUT_VENDOR)/etc/qms_log_config \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
@@ -270,6 +272,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.samsung.sensor.hi1337 \
     com.samsung.sensor.hi847 \
@@ -303,6 +306,7 @@ PRODUCT_PACKAGES += \
     audio.primary.kalama \
     camera.unihal.default \
     gatekeeper.mdfpp \
+    libsecaudiohal_aidl \
     sensors.dynamic_sensor_hal \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
@@ -383,9 +387,6 @@ PRODUCT_PACKAGES += \
     libSWNDFilterPreview.camera.samsung \
     libSceneDetector_v1.camera.samsung \
     libSecJpegEncoder.uniplugin@1.0 \
-    libSemDataProps \
-    libSemTelephonyProps \
-    libSingleTakeBlurDetection.uniplugin@1.0 \
     libSnpeCpu \
     libSnpeGpu \
     libSnpeHtpV73Stub \
@@ -400,6 +401,8 @@ PRODUCT_PACKAGES += \
     libTrustedUIVM \
     libUniPluginUtils \
     libUniScaler.uniplugin@1.0 \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     libVideoSuperNight_interface.uniplugin@1.0 \
     lib_SamsungRec_08020 \
     lib_SoundAlive_3DPosition_ver202 \
@@ -449,6 +452,7 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libc++_shared \
     libc2filterplugin \
+    libcacertclient \
     libcamxcommonutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -555,6 +559,7 @@ PRODUCT_PACKAGES += \
     libisphwsetting \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libjpegQtable_interface \
     libjpege \
     libjpegencoder_sw.unifunc \
@@ -924,6 +929,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
     vendor.qti.qspmhal@1.0 \
+    vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
@@ -1019,6 +1025,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    CACertService \
     TimeService \
     HotwordEnrollmentOKGoogleEx4HEXAGON \
     HotwordEnrollmentXGoogleEx4HEXAGON \
@@ -1043,6 +1050,7 @@ PRODUCT_PACKAGES += \
     nxp.android.hardware.nfc@1.2-service.xml \
     qms-saidl.xml \
     sec_c2_manifest_default0_1_0.xml \
+    secaudiohalaidl_manifest.xml \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.diag.hal.service.xml \
@@ -1066,6 +1074,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     nxp.android.hardware.nfc@1.2-service \
     rild \
+    secaudiohalaidl \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.trustedui@1.0-service-qti \
