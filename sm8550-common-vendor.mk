@@ -409,9 +409,6 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver800 \
     lib_SoundBooster_ver1100 \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_lvacfs \
     lib_profiler \
     libadm \
@@ -424,16 +421,12 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
     libar-pal \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
     libarcsoft_object_tracking \
     libarcsoft_video_super_night \
     libatccore \
-    libats \
     libaudio_log_utils \
     libauto_framing_arcsoft.uniplugin@1.0 \
     libauto_framing_lite.uniplugin@1.0 \
@@ -597,8 +590,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
-    liblx-ar_util \
-    liblx-osal \
     libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
     libmcaimegpuSSM.samsung \
@@ -879,9 +870,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V2-ndk \
