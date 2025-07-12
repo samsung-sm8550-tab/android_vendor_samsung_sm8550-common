@@ -163,12 +163,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_default_sensors.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors_template.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_iot_hdk_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_iot_hdk_dae.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_irq.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lps22hh_0.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_power_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_qsh_ble_0.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
@@ -245,8 +241,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/gmu_gen70200.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70200.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/mfc/mfc_fw_flash.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/firmware/mfc/mfc_fw_flash_cps4038.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash_cps4038.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/nfc/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libsn220u_fw.so \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
@@ -262,8 +256,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/AIAwbModel_v2.2.tflite:$(TARGET_COPY_OUT_VENDOR)/lib64/AIAwbModel_v2.2.tflite \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx564.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/f_dual_calibration.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
@@ -274,19 +266,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
-    com.samsung.sensor.hi1337 \
-    com.samsung.sensor.hi847 \
-    com.samsung.sensor.imx258 \
-    com.samsung.sensor.imx374 \
-    com.samsung.sensor.imx471 \
-    com.samsung.sensor.imx564 \
-    com.samsung.sensor.imx754 \
-    com.samsung.sensor.s5k2ld \
-    com.samsung.sensor.s5k3j1 \
-    com.samsung.sensor.s5k3k1 \
-    com.samsung.sensor.s5k3lu \
-    com.samsung.sensor.s5kgn3 \
-    com.samsung.sensor.s5khp2 \
     cdsp_face \
     com.qti.qseeaon \
     com.qti.qseeutils \
