@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_spatializer.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -49,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
@@ -59,7 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
@@ -80,6 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
@@ -96,7 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -244,7 +241,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    btaudio_offload_if \
+    vendor.qti.diaghal-V1-ndk \
     com.samsung.sensor.hi1337 \
     com.samsung.sensor.hi847 \
     com.samsung.sensor.imx258 \
@@ -269,20 +266,12 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     audio.primary.kalama \
     camera.unihal.default \
     gatekeeper.mdfpp \
+    libsecaudiohal_aidl \
     sensors.dynamic_sensor_hal \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -337,7 +326,6 @@ PRODUCT_PACKAGES += \
     libSRIB_ARVL_HAP.camera.samsung \
     libSceneDetector_v1.camera.samsung \
     libSecJpegEncoder.uniplugin@1.0 \
-    libSingleTakeBlurDetection.uniplugin@1.0 \
     libSnpeCpu \
     libSnpeGpu \
     libSnpeHtpV73Stub \
@@ -355,9 +343,6 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver800 \
     lib_SoundBooster_ver1100 \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_profiler \
     libadm \
     libadreno_app_profiles \
@@ -369,16 +354,12 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
     libar-pal \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
     libarcsoft_object_tracking \
     libarcsoft_video_super_night \
     libatccore \
-    libats \
     libaudio_log_utils \
     libauto_framing_arcsoft.uniplugin@1.0 \
     libautotracking_interface \
@@ -386,14 +367,10 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbitmlengine \
     libbitmlenginev2 \
-    libbluetooth_audio_session_aidl_qti \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libbodyid.arcsoft \
-    libbt-hidlclient \
-    libbtnv \
     libc++_shared \
     libc2filterplugin \
+    libcacertclient \
     libcamxcommonutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -496,6 +473,7 @@ PRODUCT_PACKAGES += \
     libisphwsetting \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libjpegQtable_interface \
     libjpege \
     libjpegencoder_sw.unifunc \
@@ -527,8 +505,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
-    liblx-ar_util \
-    liblx-osal \
     libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
     libmctfengine_stub \
@@ -668,7 +644,6 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsegmentationeffect.uniplugin@1.0 \
     libsegmentationeffect_capture.uniplugin@1.0 \
-    libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
     libsensorndkbridge \
@@ -710,9 +685,7 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libsnsutils \
-    libsoc_helper \
     libsocial_image_enhancement.uniplugin@1.0 \
-    libspatializerparamstorage \
     libspcom \
     libspeakercalibration \
     libspl \
@@ -800,12 +773,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.bttpi-V2-ndk \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -826,7 +793,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0 \
@@ -850,12 +816,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
     vendor.qti.qspmhal@1.0 \
+    vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
-    vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
-    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
-    vendor.samsung.hardware.bluetooth.audio-impl \
-    vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.gnss-V2-ndk_platform \
@@ -865,7 +828,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    vendor.samsung.hardware.vibrator-V5-ndk \
     bm3a68v08s11n29 \
     bm3a68v08s11n30 \
     bm3a68v08s11n35 \
@@ -938,6 +900,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    CACertService \
     TimeService \
     HotwordEnrollmentOKGoogleEx4HEXAGON \
     HotwordEnrollmentXGoogleEx4HEXAGON \
@@ -955,19 +918,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
-    bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
     iweaver_v1_manifest.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     qms-saidl.xml \
     sec_c2_manifest_default0_1_0.xml \
+    secaudiohalaidl_manifest.xml \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
-    vendor.samsung.hardware.vibrator-default.xml \
     ATFWD-daemon \
     adpl \
     adsprpcd \
@@ -976,20 +938,17 @@ PRODUCT_PACKAGES += \
     diag-router \
     dspservice \
     hermesd \
-    android.hardware.bluetooth@1.1-service-qti \
     android.hardware.drm-service.widevine \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
     android.hardware.security.keymint-service-qti \
+    secaudiohalaidl \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
-    vendor.samsung.hardware.vibrator-service \
-    init.kernel.post_boot-kalama \
-    init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.sensors \
     init.qti.kernel \
@@ -1012,7 +971,6 @@ PRODUCT_PACKAGES += \
     ppd \
     qcc-vendor \
     qdcmss \
-    qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
