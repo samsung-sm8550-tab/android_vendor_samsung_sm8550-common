@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_haptic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_haptic.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_effects_spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_spatializer.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
@@ -299,7 +298,6 @@ PRODUCT_PACKAGES += \
     libSRIB_ARVL_HAP.camera.samsung \
     libSSMAutoTrigger_interface \
     libSSM_AutoTrigger \
-    libSWNDFilterPreview.camera.samsung \
     libSceneDetector_v1.camera.samsung \
     libSecJpegEncoder.uniplugin@1.0 \
     libSnpeCpu \
@@ -315,16 +313,12 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libUniPluginUtils \
-    libUniScaler.uniplugin@1.0 \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     libVideoSuperNight_interface.uniplugin@1.0 \
-    lib_SamsungRec_08020 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
-    lib_SoundAlive_play_plus_ver800 \
     lib_SoundBooster_ver1100 \
-    lib_lvacfs \
     lib_profiler \
     libadm \
     libadreno_app_profiles \
@@ -523,7 +517,6 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libmultiobject_tracker \
     libnanopb \
-    libndfilter_preview.uniplugin@1.0 \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_datapath_proxy \
