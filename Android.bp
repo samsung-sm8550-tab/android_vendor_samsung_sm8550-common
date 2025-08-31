@@ -1681,9 +1681,11 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libOpenCv.camera.samsung",
                 "libc++",
+                "libLocalTM_preview_core",
                 "liblog",
-                "libc",
                 "libdl",
+                "libc",
+                "libm",
             ],
         },
     },
@@ -3749,7 +3751,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libuniplugin",
                 "libmpbase",
-                "libautoframing_object_tracker.camera.samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -10825,13 +10826,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqfp_sensortest.so",
             ],
             shared_libs: [
-                "libcutils",
                 "liblog",
-                "libutils",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
+                "libc",
             ],
         },
     },
@@ -11562,7 +11560,8 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "lib_SamsungRec_07020",
+                "lib_SamsungRec_08020",
+                "lib_lvacfs",
                 "libsecaudioinfo",
                 "libc++",
                 "libc",
@@ -21507,4 +21506,28 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
+}
+
+cc_library_shared {
+    name: "lib_SamsungRec_07020",
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+cc_library_shared {
+    name: "lib_SamsungRec_08020",
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+cc_library_shared {
+    name: "lib_lvacfs",
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+cc_library_shared {
+    name: "libautoframing_object_tracker.camera.samsung",
+    compile_multilib: "64",
+    soc_specific: true,
 }
