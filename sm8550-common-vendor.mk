@@ -222,7 +222,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     ese_spi_nxp \
     android.hardware.gnss-aidl-impl-qti \
-    audio.primary.kalama \
     camera.unihal.default \
     gatekeeper.mdfpp \
     libsecaudiohal_aidl \
@@ -329,7 +328,6 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libar-pal \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
     libarcsoft_object_tracking \
@@ -600,7 +598,6 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     librapidscorerplus \
     librcmask \
-    librecordalive \
     libril_sem \
     librmengine_plus.uniplugin@1.0 \
     librpmb \
