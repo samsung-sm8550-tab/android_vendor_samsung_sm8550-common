@@ -174,7 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
@@ -219,19 +218,12 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libAFSegmenter_v1.camera.samsung \
     libAIHighRes_interface \
-    libAIMFISP.camera.samsung \
-    libAIMFISP_core.camera.samsung \
-    libAImode_wrapper.camera.samsung \
-    libAIphoto_core.camera.samsung \
     libAlacSwDec \
     libApeSwDec \
-    libBarcodeReader.vendor.quram \
-    libBeauty_v4.camera.samsung \
     libBlurDetectionDeepLearning.camera.samsung \
     libCB \
     libDLInterface.camera.samsung \
     libDeviceInfoProvider \
-    libDocumentDetector.uniplugin@1.0 \
     libEventFinder.camera.samsung \
     libEvrcSwCodec \
     libFace3DTA \
@@ -250,19 +242,13 @@ PRODUCT_PACKAGES += \
     libHprVisualEffect \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libHumanSegVideoModel_Vendor \
-    libIDDQD_core \
-    libImageSegmenter_v1.camera.samsung \
     libLightObjectDetector_v1.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
-    libLocalTM_preview_core \
     libLocalTM_wrapper.camera.samsung \
     libMoireDetection.camera.samsung \
     libMoireDetectionWrapper.camera.samsung \
     libMoireDetector.uniplugin@1.0 \
     libMoonVerifier_v1.camera.samsung \
-    libMotionEstimator.camera.samsung \
-    libMotionEstimator.uniplugin@1.0 \
-    libMotionEstimatorWrapper.camera.samsung \
     libObjectDetector_v1.camera.samsung \
     libOpenCL \
     libOpenCv.camera.samsung \
@@ -271,25 +257,18 @@ PRODUCT_PACKAGES += \
     libPersonal_capture.camera.samsung \
     libPersonal_core.camera.samsung \
     libPetDetector_interface \
-    libPortraitSolution.camera.samsung_preview \
     libQ6MSFR_manager_stub \
-    libQRInterface.camera.samsung \
     libQSEEComAPI \
     libQTEEConnector_vendor \
     libQcelp13SwCodec \
-    libQrDetector.uniplugin@1.0 \
     libRelighting_API.camera.samsung \
     libSNPE \
     libSRIB_ARVL_HAP.camera.samsung \
-    libSSMAutoTrigger_interface \
-    libSSM_AutoTrigger \
     libSceneDetector_v1.camera.samsung \
     libSecJpegEncoder.uniplugin@1.0 \
     libSnpeCpu \
     libSnpeGpu \
     libSnpeHtpV73Stub \
-    libTetraMFP10.camera.samsung \
-    libTetraMFP10Tuning.camera.samsung \
     libTouchInputVM \
     libTrustedInput \
     libTrustedInputTZ \
@@ -322,12 +301,9 @@ PRODUCT_PACKAGES += \
     libatccore \
     libaudio_log_utils \
     libauto_framing_arcsoft.uniplugin@1.0 \
-    libauto_framing_lite.uniplugin@1.0 \
     libautotracking_interface \
     libbacklight-calib \
     libbatching \
-    libbeauty_preview.uniplugin@1.0 \
-    libbeautyshot.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbodyid.arcsoft \
@@ -377,7 +353,6 @@ PRODUCT_PACKAGES += \
     libdsmanager \
     libdsphist_qc \
     libdsutils \
-    libdualcam_refocus_image \
     libdualcam_refocus_video \
     libegis_fp_normal_sensor_test \
     libengine_did \
@@ -398,8 +373,6 @@ PRODUCT_PACKAGES += \
     libfocuspeaking \
     libfocuspeaking.uniplugin@1.0 \
     libformatConverter.unifunc \
-    libfrc.quram \
-    libfrc_quram.uniplugin@1.0 \
     libgame_enhance \
     libgeofencing \
     libgf_in_system_lib \
@@ -428,7 +401,6 @@ PRODUCT_PACKAGES += \
     libhme \
     libhwvault \
     libhypermotion_core \
-    libiddqd.uniplugin@1.0 \
     libidl \
     libimage_enhancement.arcsoft \
     libimagecodec_native.quram \
@@ -445,17 +417,12 @@ PRODUCT_PACKAGES += \
     libjpege \
     libjpegencoder_sw.unifunc \
     libjpegsq.media.samsung \
-    libjump_shot.uniplugin@1.0 \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterutils \
     liblbs_core \
     liblistensoundmodel2vendor \
-    liblivefocus_capture_engine \
-    liblivefocus_capture_interface \
-    liblivefocus_preview_engine \
-    liblivefocus_preview_interface \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
@@ -468,7 +435,6 @@ PRODUCT_PACKAGES += \
     libloc_qwes_iface \
     libloc_socket \
     libloc_util \
-    liblocaltm_capture.uniplugin@1.0 \
     liblocation_api \
     liblocation_api_msg \
     liblocation_client_api \
@@ -480,7 +446,6 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
-    libmcaimegpuSSM.samsung \
     libmctfengine_stub \
     libmdmdetect \
     libmdmimgload \
@@ -633,10 +598,8 @@ PRODUCT_PACKAGES += \
     libshsc \
     libsi \
     libsimba.media.samsung \
-    libsingle_portrait_preview.uniplugin@1.0 \
     libskeymint10device \
     libskeymint_cli \
-    libsmartfocus.uniplugin@1.0 \
     libsmemlog \
     libsnap_compute \
     libsnap_compute_secure \
@@ -712,7 +675,6 @@ PRODUCT_PACKAGES += \
     libxml \
     libxtadapter \
     libzoomroi.samsung \
-    libzoomroi_lite.samsung \
     libdrmclearkeyplugin \
     nfc_nci_nxpsn \
     qti.video.utils.videobufferlayout \
