@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -891,7 +890,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
-    android.hardware.secure_element@1.2-service \
     android.hardware.security.keymint-service-qti \
     nxp.android.hardware.nfc@1.2-service \
     rild \
