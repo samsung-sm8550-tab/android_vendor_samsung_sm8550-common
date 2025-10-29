@@ -86,10 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
@@ -104,25 +100,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.back.xml \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_ltn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_ltn.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8550_snpe2213_vendor.dlc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/portrait_data/single_bokeh_feature_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature_vendor.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/qms_log_config:$(TARGET_COPY_OUT_VENDOR)/etc/qms_log_config \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
@@ -270,8 +256,6 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libUniPluginUtils \
-    libVendorSemDataProps \
-    libVendorSemTelephonyProps \
     libVideoSuperNight_interface.uniplugin@1.0 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
@@ -543,7 +527,6 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     librapidscorerplus \
     librcmask \
-    libril_sem \
     librmengine_plus.uniplugin@1.0 \
     librpmb \
     libsamsungcamerahal \
@@ -565,9 +548,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsec-ril \
     libsec2imageformatfilter \
-    libsec_semRil \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
@@ -759,12 +740,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss-V2-ndk_platform \
     vendor.samsung.hardware.hyper-V2-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
-    vendor.samsung.hardware.radio-V1-ndk \
-    vendor.samsung.hardware.radio.bridge-V1-ndk \
-    vendor.samsung.hardware.radio.channel-V1-ndk \
-    vendor.samsung.hardware.radio.data-V1-ndk \
-    vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.security.drk-V1-ndk \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
@@ -883,7 +858,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
     android.hardware.security.keymint-service-qti \
-    rild \
     secaudiohalaidl \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
