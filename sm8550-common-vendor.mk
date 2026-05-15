@@ -117,7 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000301_0.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000301_0.img \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000304_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000304_c.img \
+    vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000305_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000305_c.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/secnvm/k250a_47000306_1.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_47000306_1.img \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/akmlib.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/akmlib.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors_template.json \
@@ -149,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat \
     vendor/samsung/sm8550-common/proprietary/vendor/firmware/wlan-connection-roaming-backup.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan-connection-roaming-backup.ini \
@@ -728,72 +727,72 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    bm3a68v08s11n29 \
-    bm3a68v08s11n30 \
-    bm3a68v08s11n35 \
-    bm3a68v08s11n36 \
-    bm3a68v08s11n37 \
-    bm3a68v08s11n38 \
-    bm3a68v08s11n39 \
-    bm3a68v08s11n40 \
-    bm3a68v08s11n46 \
-    bm3a68v08s11n47 \
-    bm3a68v08s11n48 \
-    bm3a68v08s11n49 \
-    bm3a68v08s11n52 \
-    bm3a68v08s11n53 \
-    bm3a73v08s11n02 \
-    bm3a73v08s11n03 \
-    bm3a73v08s11n04 \
-    bm3a73v08s11n06 \
-    bm3a73v08s11n07 \
-    bm3a73v08s11n08 \
-    bm3a73v08s11n09 \
-    bm3a73v08s11n12 \
-    bm3a73v08s11n13 \
-    bm3a73v08s11n14 \
-    bm3a73v08s11n15 \
-    bm3a73v08s11n16 \
-    bm3a73v08s11n17 \
-    bm3a73v08s11n18 \
-    bm3a73v08s11n19 \
-    bm3a73v08s11n20 \
-    bm3a73v08s11n21 \
-    bm3a73v08s11n22 \
-    bm3a73v08s11n23 \
-    bm3a73v08s11n24 \
-    bm3a73v08s11n25 \
-    bm3a73v08s11n26 \
-    bm3a73v08s11n27 \
-    bm3a73v08s11n28 \
-    bm3a73v08s11n41 \
-    bm3a73v08s11n42 \
-    bm3a73v08s11n43 \
-    bm3a73v08s11n44 \
-    bm3a73v08s11n45 \
-    bm3a73v08s11n50 \
-    bm3a73v08s11n51 \
-    libQ6MSFR_manager_skel \
-    libSnpeHtpV73Skel \
-    libadsp_jpege_skel \
-    libapn_dsp_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libdsphist_qc_skel \
-    libdspmc_qc_skel \
-    libevadsp_3_0 \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmobilenet_dsp_frc \
-    libmobilenet_dsp_frc_networks \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libvpt_action_recognition \
-    libQnnHtpV73Skel \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n30_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n35_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n36_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n37_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n38_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n39_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n40_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n46_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n47_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n48_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n49_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n52_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n53_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n02_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n03_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n04_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n06_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n07_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n08_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n09_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n12_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n13_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n14_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n15_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n16_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n17_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n18_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n19_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n20_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n21_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n22_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n23_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n24_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n25_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n26_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n27_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n28_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n41_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n42_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n43_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n44_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n45_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n50_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n51_bin \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapn_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsphist_qc_skel_so \
+    vendor_lib_rfsa_adsp_libdspmc_qc_skel_so \
+    vendor_lib_rfsa_adsp_libevadsp_3_0_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
+    vendor_lib_rfsa_adsp_snap_libQnnHtpV73Skel_so \
     libdiag_system \
     libmmosal \
     libmmparser_lite \

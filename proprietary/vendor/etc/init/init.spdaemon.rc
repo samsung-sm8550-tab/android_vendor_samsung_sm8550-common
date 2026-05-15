@@ -1,6 +1,9 @@
 on post-fs && property:ro.boot.product.vendor.sku=kalama
     start vendor.spdaemon
     start vendor.sec_nvm
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
+    mkdir /mnt/vendor/persist/spudc 0770 system system
+    mkdir /mnt/vendor/spunvm 0660 system system
 
 service vendor.spdaemon /vendor/bin/spdaemon
     class core
