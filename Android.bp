@@ -8782,40 +8782,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqc2audio_hwaudiocodec",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqc2audio_hwaudiocodec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libqc2audio_base",
-                "libqc2audio_platform",
-                "libqc2audio_utils",
-                "libqc2audio_basecodec",
-                "libcodec2_vndk",
-                "libstagefright_foundation",
-                "libpalclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqc2audio_platform",
     owner: "samsung",
     strip: {
