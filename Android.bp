@@ -1501,7 +1501,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libtensorflowlite.camera.samsung",
-                "libtensorflowlite_gpu.camera.samsung",
                 "liblog",
                 "libc",
                 "libm",
@@ -1528,7 +1527,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libMoireDetection.camera.samsung",
                 "libtensorflowlite.camera.samsung",
-                "libtensorflowlite_gpu.camera.samsung",
                 "liblog",
                 "libc",
                 "libm",
@@ -9710,33 +9708,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqfp_sensortest",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqfp_sensortest.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqisl",
     owner: "samsung",
     strip: {
@@ -11558,75 +11529,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsfp_sensor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfp_sensor.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libutils",
-                "libbinder_ndk",
-                "libhardware",
-                "libsfp_teegw",
-                "android.hardware.biometrics.fingerprint-V2-ndk",
-                "android.hardware.biometrics.common-V2-ndk",
-                "vendor.samsung.hardware.biometrics.fingerprint-V1-ndk",
-                "libsynaFpSensorTestNwd",
-                "libegis_fp_normal_sensor_test",
-                "libgf_in_system_lib",
-                "libqfp_sensortest",
-                "liblog",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsfp_teegw",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfp_teegw.so",
-            ],
-            shared_libs: [
-                "libQSEEComAPI",
-                "libdmabufheap",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libshctrl",
     owner: "samsung",
     strip: {
@@ -13176,32 +13078,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "liblog",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtensorflowlite_gpu.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtensorflowlite_gpu.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libGLESv3",
-                "libEGL",
-                "liblog",
-                "libdl",
-                "libm",
                 "libc",
             ],
         },
