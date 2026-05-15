@@ -258,7 +258,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
     libai_denoiser_interface \
     libaidenoiser \
     libaidenoiserv2 \
