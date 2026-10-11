@@ -694,7 +694,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2 \
@@ -890,6 +889,7 @@ PRODUCT_PACKAGES += \
     system_dlkm_modprobe \
     tftp_server \
     thermal-engine-v2 \
+    time_client \
     time_daemon \
     trusteduilistener \
     vendor_modprobe \
